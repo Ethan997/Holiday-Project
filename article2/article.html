@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    　　<!--[if gte IE 6]>
+    　　　　<script src="https://cdn.bootcss.com/html5shiv/3.7.0/html5shiv-printshiv.js"></script>
+    　　<![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <title>Angular学习网</title>
+    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="http://cdn.bootcss.com/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+<!--头导航栏-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" id="w-btn-nav" data-toggle="collapse"  data-target="#navigation">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="headerleft logo">
+                <img src="imgs/logo.png" class="logo" height="71"/><span class="w-title"></span>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-left w-nav">
+                <li><a href="../index/index.html" class="w-li-index"><i class="glyphicon glyphicon-home"></i>&nbsp首页</a></li>
+                <li class="dropdown">
+                    <a href="index3.html" class="dropdown-toggle" data-toggle="dropdown">Angular教程<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../article1/article.html">AngularJS 简介</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">AngularJS 模块</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                <li class="dropdown">
+                    <a href="../testSdudy/test.html"   role="button" aria-haspopup="true" aria-expanded="false">动手试试</span></a>
+
+                </li>
+                <li><a href="../download/download.html">AngularJs下载</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">AngularJS API<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">改进计划</a> </li>
+                        <li class="divider"></li>
+                        <li><a href="#">改进措施</a> </li>
+                        <li class="divider"></li>
+                        <li><a href="#">改进方案</a> </li>
+                    </ul>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 新闻文章-->
+<article class="wBox ">
+    <h3 class="text-center wTitle">AngularJS 模块（Introduction） <br> <small class="wTitleSm">来源：XXX    作者：管理员     更新时间：2017-09-12</small></h3>
+    <hr/>
+    <div class="wArticle">
+        <table class="table table-striped ">
+            <thead>
+                <tr>
+                    <th>模块名</th>
+                    <th>描述</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr >
+                    <th>ng</th>
+                    <th>ngAngularJS的默认模块，包含AngularJS的所有核心组件。</th>
+                </tr>
+                <tr class="success">
+                    <th>ngRoute</th>
+                    <th>AngularJS是一套前端的MVC框架。那么，为了实现视图的中转，肯定会涉及到路由的概念。<span style="color:#00bbee;">ngRoute</span>即是AngularJS的路由模块。</th>
+                </tr>
+                <tr>
+                    <th>ngAnimate</th>
+                    <th>AngularJS的动画模块，使用<span style="color:#00bbee;">ngAnimate</span>各种核心指令能为你的应用程序提供动画效果。动画可使用css或者JavaScript回调函数。</th>
+                </tr>
+                <tr class="success">
+                    <th>ngAria</th>
+                    <th>使用<span style="color:#00bbee;">ngaria</span>为指令注入共同的可达性属性和提高残疾人用户体验。</th>
+                </tr>
+                <tr>
+                    <th>ngResource</th>
+                    <th>当查询和发送数据到一个REST 服务器时，使用<span style="color:#00bbee;">ngResource</span>模块。</th>
+                </tr>
+                <tr class="success">
+                    <th>ngCookies</th>
+                    <th><span style="color:#00bbee;">ngCookies</span>模块提供了一个方便的包用于读取和写入浏览器的cookies。</th>
+                </tr>
+                <tr >
+                    <th>ngTouch</th>
+                    <th><span style="color:#00bbee;">ngRoute</span>模块提供触摸事件，方便的应用于移动触摸设备。它的实现是实现是基于jQuery移动触摸事件处理。</th>
+                </tr><tr class="success">
+                    <th>ngSanitize</th>
+                    <th><span style="color:#00bbee;">ngSanitize</span>模块可安全地在你的应用程序中解析和操作HTML数据。</th>
+                </tr>
+                <tr >
+                    <th>ngMessages</th>
+                    <th>AngularJS表单验证模块。<span style="color:#00bbee;">ngMessages</span>模块完美的实现了很多表单验证的常用功能，简化你的开发流程。</th>
+                </tr>
+            </tfoot>
+
+        </table>
+    </div>
+</article>
+<!--小火箭-->
+
+
+
+<footer class="w-footer">
+        <div class="wFooterCon">
+            <div class="wCompany">
+                <img src="imgs/logo.png" height="80" width="220" style="margin-top: 30px"/>
+                <p>Copyright ©XXXX开发有限公司All Right Reserved.</p>
+                <p>技术支持：XX网络</p>
+            </div>
+            <div class="wAddress">
+                <p class="wAddress1-1">友情网站：XXXXXXXXXXX</p>
+                <p >电话：0574-6XXXXX</p>
+                <p >免费热线：XXXXXXXX</p>
+                <p >传真：XXXXXXXX15</p>
+                <p >E-mail：XXXXXX@syXX.com</p>
+            </div>
+         </div>
+</footer>
+
+
+</body>
+<script>
+    $(function () {
+        $(".dropdown").mouseover(function () {
+            $(this).addClass("open");
+        });
+        $(".dropdown").mouseleave(function () {
+            $(this).removeClass("open")
+        });
+    });
+
+    $('.to-top').toTop();
+    $('.to-top').toTop({
+        //options with default values
+        autohide: true,
+        offset: 420,
+        speed: 500,
+        right: 15,
+        bottom: 30
+    });
+</script>
+</html>

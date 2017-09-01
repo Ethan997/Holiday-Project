@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    　　<!--[if gte IE 6]>
+    　　　　<script src="https://cdn.bootcss.com/html5shiv/3.7.0/html5shiv-printshiv.js"></script>
+    　　<![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <title>Angular学习网</title>
+    <link rel="stylesheet" href="download.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="http://cdn.bootcss.com/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
+    <script src="articleJs/jquery.toTop.min.js"></script>
+    <script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+
+</head>
+<body>
+<!--头导航栏-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" id="w-btn-nav" data-toggle="collapse"  data-target="#navigation">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="headerleft logo">
+                <img src="imgs/logo.png" class="logo" height="71"/><span class="w-title"></span>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-left w-nav">
+                <li><a href="../index/index.html" class="w-li-index"><i class="glyphicon glyphicon-home"></i>&nbsp首页</a></li>
+                <li class="dropdown">
+                    <a href="index3.html" class="dropdown-toggle" data-toggle="dropdown">Angular教程<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../article1/article.html">AngularJS 简介</a></li>
+                        <li class="divider"></li>
+                        <li><a href="../article2/article.html">AngularJS 模块</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                <li class="dropdown">
+                    <a href="../testSdudy/test.html" role="button" aria-haspopup="true" aria-expanded="false">动手试试</span></a>
+                </li>
+                </li>
+                <li><a href="./download.html">AngularJs下载</a></li>
+                <li class="dropdown">
+                    <a href="../api/api.html" role="button">AngularJS API</a>
+
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="wBox ">
+        <!--快速导航-->
+
+        <aside class="wSmNavList">
+            <ul class="nav nav-list">
+                <li ><h4>快速导航</h4></li>
+                <li class="active wSNav-1" ><a href="../index/index.html">首页 </a></li>
+                <li class="wSNav-2"><a data-toggle="collapse" data-target="#wSmNavListCon1">Angular教程</a>
+                    <ul id="wSmNavListCon1" class="nav collapse on wSmNavListCon">
+                        <li class="wSNav-2-1"><a href="../article1/article.html">AngularJS简介&nbsp<i class="glyphicon glyphicon-menu-right"></i></a></li>
+                        <li class="divider"></li>
+                        <li class="wSNav-2-2"><a href="../article2/article.html">AngularJS模块&nbsp<i class="glyphicon glyphicon-menu-right"></i></a></li>
+                    </ul>
+                </li>
+                <li class="wSNav-1"><a data-target="#wSmNavListCon2" href="../testSdudy/test.html">动手试试</a>
+
+                </li>
+                <li class="wSNav-4"><a href="./download.html">AngularJS下载</a></li>
+                <li class="wSNav-1"><a href="../api/api.html">AngularJS API</a>
+                </li>
+            </ul>
+        </aside>
+        <!-- 新闻列表-->
+        <section class="newsList">
+            <h2 class="text-center text-primary" style="font-weight: bold">AngularJS下载</h2>
+            <hr>
+            <p style="font-size: 16px;margin-left: 6%">
+                目前最新版本是1.5.8，这里给出官方1.5.8的下载地址。<br>
+                下载更多的历是版本，你可以进入 <a href="https://code.angularjs.org/">点击这里</a> 下载安装
+            </p>
+            <div class="conBox">
+                <h3 style="margin-left:2%">引入AngularJS CDN文件</h3>
+                <hr>
+                <p style="margin-left: 6%;margin-top: 20px">
+                    当然，你还有更多选择，那就是引入AngularJS CDN文件。<br>
+                    AngularJS官网本身采用AngularJS库构建，页面中的AngularJS库通过Google的CDN（内容分发网络）引入，所以国内访问会有问题。<br>
+                    国内我们一般推荐是以下CDN <br>
+                </p>
+                <div class="conBoxSm">
+
+                    <div ng-app="myApp" ng-controller="myCtrl" style="margin-left:6%">
+
+                        <form class="form-inline">
+                            <div class="form-group has-success has-feedback">
+                                <label class="control-label" for="inputGroupSuccess3" style="font-size: 20px">引入百度CDN&nbsp</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">1</span>
+                                    <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" value="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js" readonly>
+                                </div>
+                                <br>
+                                <label class="control-label" for="inputGroupSuccess4" style="font-size: 20px;margin-top: 20px">引入bootcdn&nbsp</label>
+                                <div class="input-group" style="margin-top: 20px">
+                                    <span class="input-group-addon">1</span>
+                                    <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess3Status" value="//cdn.bootcss.com/angular.js/1.5.8/angular.min.js" readonly>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+                <hr>
+                <h3 style="margin-left:2%">AngularJS常用模块</h3>
+                <p style="margin-left: 6%;margin-top: 20px">
+                    通过上面的引用，你只能使用AngularJS的核心模块,<mark style="color: #00bbee">Ng模块</mark>  <br>
+                    AngularJS还提供了各种功能丰富的模块，如 <mark style="color: #00bbee">ngRoute</mark> ，<mark style="color: #00bbee">ngAnimate</mark>，<mark style="color: #00bbee">ngCookies</mark>，<mark style="color: #00bbee">ngTouch</mark>，等等。 <br>
+                    以下AngularJS个功能模块的CDN，以BootCDN为例。 <br>
+                </p>
+                <hr>
+                <h3 style="margin-left:2%">通过依赖管理安装</h3>
+                <p style="margin-left: 6%;margin-top: 20px;font-size: 20px">
+                    <mark style="color: #00bbee;" >npm</mark> <br>
+                    <mark style="color: #00bbee">bower </mark><br>
+                </p>
+            </div>
+
+        </section>
+</div>
+<!--小火箭-->
+<a class="to-top">
+    <img src="imgs/rocket.png" alt="返回顶部" width="70" height="100" >
+</a>
+
+<footer class="w-footer">
+    <div class="wFooterCon">
+        <div class="wCompany">
+            <img src="imgs/logo.png" height="80" width="220" style="margin-top: 30px"/>
+            <p>Copyright ©XXXX开发有限公司All Right Reserved.</p>
+            <p>技术支持：XX网络</p>
+        </div>
+        <div class="wAddress">
+            <p class="wAddress1-1">友情网站：XXXXXXXXXXX</p>
+            <p >电话：0574-6XXXXX</p>
+            <p >免费热线：XXXXXXXX</p>
+            <p >传真：XXXXXXXX15</p>
+            <p >E-mail：XXXXXX@syXX.com</p>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+<script>
+    $(function () {
+        $(".dropdown").mouseover(function () {
+            $(this).addClass("open");
+        });
+        $(".dropdown").mouseleave(function () {
+            $(this).removeClass("open")
+        });
+    });
+
+    $('.to-top').toTop();
+    $('.to-top').toTop({
+        //options with default values
+        autohide: true,
+        offset: 420,
+        speed: 500,
+        right: 15,
+        bottom: 30
+    });
+</script>
+<script src="./test/dist/pagination.js"></script>
+<script>
+    $(function(){
+
+        function createDemo(name){
+            var container = $('#pagination-' + name);
+            var sources = function(){
+                var result = [];
+
+                for(var i = 1; i < 30; i++){
+                    result.push(i+" 【盛典全程回顾】戏曲电影展映表彰盛典圆满成功，看看都来了哪些“大咖”");
+                }
+
+                return result;
+            }();
+
+            var options = {
+                dataSource: sources,
+                className: 'paginationjs-theme-blue',
+                callback: function(response, pagination){
+                    window.console && console.log(response, pagination);
+
+                    var dataHtml = '<ul>';
+
+                    $.each(response, function(index, item){
+                        dataHtml += '<li>'+ item +'</li>';
+                    });
+
+                    dataHtml += '</ul>';
+
+                    container.prev().html(dataHtml);
+                }
+            };
+
+            //$.pagination(container, options);
+
+            container.addHook('beforeInit', function(){
+                window.console && console.log('beforeInit...');
+            });
+            container.pagination(options);
+
+            container.addHook('beforePageOnClick', function(){
+                window.console && console.log('beforePageOnClick...');
+                //return false
+            });
+
+            return container;
+        }
+
+        createDemo('demo1');
+
+    });
+</script>
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+        $scope.firstName = "John(请输入)";
+        $scope.lastName = "Doe";
+    });
+</script>
+</html>
